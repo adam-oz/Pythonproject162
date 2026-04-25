@@ -86,7 +86,7 @@ def main():
     stand.add_menu_item(cookie)
 
     try:
-        # not on menu → should raise exception
+       
         stand.enter_sales("pancake", 4)
     except MissingMenuItemError:
         print("Tried to record sales for something not on the menu.")
