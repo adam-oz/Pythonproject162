@@ -1,3 +1,7 @@
+# Author: Adam Osman
+# GitHub: adam-oz
+# Date: 04/24/2026
+# Description: Unit tests for LemonadeStand classes
 
 
 import unittest
