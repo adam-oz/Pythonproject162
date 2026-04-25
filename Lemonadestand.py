@@ -4,13 +4,11 @@
 # Description: Tracks items, sales, and profit.
 
 
-class DuplicateMenuItemError(Exception):
-    """Error if item already exists."""
+class DuplicateMenuItemError(Exception)
     pass
 
 
 class MissingMenuItemError(Exception):
-    """Error if item not found."""
     pass
 
 
