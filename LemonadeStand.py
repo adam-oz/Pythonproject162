@@ -1,5 +1,5 @@
 # Author: Adam Osman
-# Github: adam-oz
+# GitHub: adam-oz
 # Date: 04/24/2026
 # Description: Tracks menu items and sales for a lemonade stand
 
@@ -80,19 +80,19 @@ def main():
     stand = LemonadeStand("Lemons R Us")
 
     lemonade = MenuItem("lemonade", 0.5, 1.5)
-    eggtart = MenuItem("cookie", 0.8, 1.7)
+    cookie = MenuItem("cookie", 0.8, 1.7)
 
     stand.add_menu_item(lemonade)
-    stand.add_menu_item(eggtart)
+    stand.add_menu_item(cookie)
 
     try:
-        
+        # not on menu → should raise exception
         stand.enter_sales("pancake", 4)
     except MissingMenuItemError:
         print("Tried to record sales for something not on the menu.")
 
     stand.enter_sales("lemonade", 12)
-    stand.enter_sales("eggtart", 6)
+    stand.enter_sales("cookie", 6)
 
     print("Total profit:", stand.total_profit_for_stand())
 
